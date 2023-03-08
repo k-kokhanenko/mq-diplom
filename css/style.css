@@ -111,6 +111,95 @@
     text-transform: uppercase;
   }
   
+  /* Trends styles */
+
+  .trends {
+    margin-top: 58px;
+  }
+
+  .trends_items {
+/**/    padding-top: 28px; /* проверить скорее всего больше*/
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /**/ /* стили похожи на aside-item-title, может как-то объеденить эти заголовки, отличаются только размером шрифта! и 
+  этот же класс можно использовать в разделе Наши Изделия */
+  .trends-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #0f0d0e;
+    font-size: 20px;
+  }
+  
+  .trends-title::after {
+    content: "";
+    width: 66px;
+    height: 3px;
+    display: block;
+    background: #e1d9bd;
+    margin: 10px auto 0;
+  }
+
+  .trends-item {
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    min-height: 320px;
+    width: calc(25% - 6px);
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover; 
+    position: relative;
+  }
+
+  .trends-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #000000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    z-index: 1;
+  }
+
+  .trends-item-desc {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 20px;
+    border: 3px solid #b59f5b;
+    line-height: 24px;
+    z-index: 2;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 35px;
+    padding-top: 37px;
+
+    width: 100%;
+  }
+
+  .trends-background-1 {
+    background-image: url("../images/trend1.jpg");
+  }
+  .trends-background-2 {
+    background-image: url("../images/trend2.jpg");
+  }
+  .trends-background-3 {
+    background-image: url("../images/trend3.jpg");
+  }
+  .trends-background-4 {
+    background-image: url("../images/trend4.jpg");
+  }
+
+
   /* Main styles*/
   
   .container {

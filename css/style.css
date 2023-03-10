@@ -21,7 +21,6 @@
   
   a {
     text-decoration: none;
-    text-transform: uppercase;
   }
   
   ul,
@@ -118,13 +117,11 @@
   }
 
   .trends_items {
-/**/    padding-top: 28px; /* проверить скорее всего больше*/
+    padding-top: 28px; 
     display: flex;
     justify-content: space-between;
   }
 
-  /**/ /* стили похожи на aside-item-title, может как-то объеденить эти заголовки, отличаются только размером шрифта! и 
-  этот же класс можно использовать в разделе Наши Изделия */
   .trends-title {
     text-align: center;
     text-transform: uppercase;
@@ -145,12 +142,9 @@
     box-sizing: border-box;
     display: flex;
     align-items: flex-end;
-    padding-bottom: 16px;
-    padding-left: 20px;
-    padding-right: 20px;
-
+    padding: 0px 20px 16px; 
     min-height: 320px;
-    width: calc(25% - 6px);
+    width: calc((100% - 15px) / 4);
     background-color: #000000;
     background-repeat: no-repeat;
     background-position: center top;
@@ -178,11 +172,7 @@
     border: 3px solid #b59f5b;
     line-height: 24px;
     z-index: 2;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 35px;
-    padding-top: 37px;
-
+    padding: 35px 32px;
     width: 100%;
   }
 
@@ -198,7 +188,6 @@
   .trends-background-4 {
     background-image: url("../images/trend4.jpg");
   }
-
 
   /* Main styles*/
   
@@ -241,6 +230,7 @@
   .article-link {
     font-size: 14px;
     color: #b59f5b;
+    text-transform: uppercase;
   }
   
   .article-link:hover {
@@ -256,6 +246,7 @@
     color: #0f0d0e;
     font-size: 20px;
     line-height: 24px;
+    text-transform: uppercase;
   }
   
   .article-title-link {
@@ -345,6 +336,7 @@
     color: #000000;
     font-size: 14px;
     line-height: 18px;
+    text-transform: uppercase;
   }
   
   .new-posts-title-link:hover {
@@ -423,6 +415,7 @@
     font-size: 12px;
     color: #0f0d0e;
     padding: 4px 14px;
+    text-transform: uppercase;
     display: block;
   }
   
@@ -463,7 +456,77 @@
     top: -4px;
     left: 5px;
   }
+
+  /* Products styles */
+  .products {
+    margin-top: 64px;  
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+  }
+
+  .product-cards {
+    padding-top: 41px; 
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .product-card {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-card-img {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
   
+  .product-card-desc {
+    width: 347px;
+    box-sizing: border-box;
+    margin-top: -29px;
+    padding-top: 54px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border: 3px solid #b59f5b;
+    flex-grow: 1;
+  }
+
+  .products-button {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 14px;
+    background-color: #b59f5b;
+    height: 48px;
+    border: none;
+    cursor: pointer;
+    padding-left: 29px;
+    padding-right: 27px;
+  }
+
+  .products-link {
+    color: #b59f5b;
+  }
+
+  .product-card-price-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 25px;
+  }
+
+  .product-discount-price {
+    font-size: 14px;
+    text-decoration: line-through;
+  }
+
+  .product-price {
+    font-size: 20px;
+  }
+
   /* Footer styles */
   
   .footer {
@@ -533,4 +596,135 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
+  /* Popup window styles */
+
+  .popup {
+    /*visibility: hidden;*/
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    z-index: 3;
+  }
+
+  .popup-content {
+    margin: auto;
+    width: 390px;
+    padding: 54px 30px;
+    background-color: white;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .popup-close {
+    cursor: pointer;
+    border: 0;
+  }
+
+  .popup-close::after {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    top: -25px;
+    right : 0px;
+    background-image: url(../svg/form-x.svg);
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+  }
+
+  .popup-form-label {
+    font-size: 13px;
+    margin-top: 28px;
+    margin-bottom: 10px;
+    color: #000000;
+  }
+
+  .popup-form-select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    height: 47px;
+    padding-left: 20px;
+    padding-right: 22px;
+    font-size: 13px;
+    font-weight: 400;
+    font-family: OpenSans-Regular, sans-serif;
+    background-color: #f4f7f6;
+    border: 1px solid #cbd1d4;
+    color: rgba(0, 0, 0, 0.54);
+    background-image: url("../svg/form-arrows.svg");
+    background-size: 10px 16px;
+    background-repeat: no-repeat;
+    background-position: right 13px center;
+  }
+
+  .popup-form-select:focus,
+  .popup-form-textarea:focus {
+    outline: 1px solid #b59f5b;
+  }
+
+  .popup-form-textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 100%;
+    height: 130px;
+    padding: 20px;
+    resize: none;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 13px;
+    font-weight: 400;
+    font-family: OpenSans-Regular, sans-serif;
+    background-color: #f4f7f6;
+    border: 1px solid #cbd1d4;
+    box-sizing: border-box;
+  }
   
+  .popup-form-button {
+    margin-top: 25px;
+    font-size: 14px;
+    height: 48px;
+    text-transform: uppercase;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+    background-color: #b59f5b;
+  }
+
+  .popup-form-radio>span {
+    font-size: 13px;
+    font-weight: 400;
+    font-family: OpenSans-Regular, sans-serif;
+    align-items: center;
+    display: inline-flex;
+    margin-right: 15px;
+  }
+
+  .popup-form-radio>span::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-right: 5px; 
+    background-image: url(../svg/form-empty-circle.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 18px 18px;
+  }
+
+  .popup-form-radio>input:checked+span::before {
+    background-image: url(../svg/form-circle.svg);
+  }
+
+  /* tablet */
+  @media (min-width: 641px) and (max-width: 1200px) {
+  }
+
+  /* mobile */
+  @media (max-width: 640px) {
+  }

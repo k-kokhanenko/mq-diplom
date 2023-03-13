@@ -435,27 +435,21 @@
       </button>
       <h2 class="trends-title">ваш фидбек</h2>
       <form class="popup-form" action="#0">
-        <label class="popup-form-group">
-          <div class="popup-form-label">Как часто вы заходите на сайт?</div>
-          <select class="popup-form-select">
-            <option value="every-day" selected>Почти каждый день</option>
-          </select>
+        <div class="popup-form-label">Как часто вы заходите на сайт?</div>
+        <select class="popup-form-select">
+          <option value="every-day" selected>Почти каждый день</option>
+        </select>     
+        <div class="popup-form-label">Вы подписаны на e-mail рассылку?</div>
+        <label class="popup-form-radio">
+          <input type="radio" class="visually-hidden" name="radio" checked>
+          <span>Да</span>
         </label>
-        <label class="popup-form-group">
-          <div class="popup-form-label">Вы подписаны на e-mail рассылку?</div>
-          <label class="popup-form-radio">
-            <input type="radio" class="visually-hidden" name="radio" checked>
-            <span>Да</span>
-          </label>
-          <label class="popup-form-radio">
-            <input type="radio" class="visually-hidden" name="radio">
-            <span>Нет</span>
-          </label>
+        <label class="popup-form-radio">
+          <input type="radio" class="visually-hidden" name="radio">
+          <span>Нет</span>
         </label>
-        <label class="popup-form-group">
-          <div class="popup-form-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</div>
-          <textarea class="popup-form-textarea" placeholder="Может, больше рецептов?" required></textarea>  
-        </label>
+        <div class="popup-form-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</div>
+        <textarea class="popup-form-textarea" placeholder="Может, больше рецептов?" required></textarea>  
         <button class="popup-form-button" type="submit">отправить</button>
       </form>
     </div>

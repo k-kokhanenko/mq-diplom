@@ -222,7 +222,7 @@
   }
   
   .article-image {
-    min-width: 380px;
+    max-width: 380px;
     max-height: 294px;
     display: block;
   }
@@ -324,8 +324,9 @@
   }
   
   .new-posts-image {
-    width: 70px;
+    max-width: 70px;
     max-height: 70px;
+    display: block;
   }
   
   .new-posts-content {

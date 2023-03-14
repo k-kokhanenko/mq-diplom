@@ -238,7 +238,7 @@
   
   .article-image {
     max-width: 380px;
-    max-height: 294px;
+    height: 294px;
     display: block;
   }
   
@@ -300,7 +300,7 @@
   }
   
   .article-desc > p:not(:first-child) {
-    margin-top: 1em;
+    margin-top: 12px;
   }
   
   /* Aside styles */
@@ -803,13 +803,31 @@
       flex-direction: column;
       width: 100%;
     }
+
     .aside {
       width: 100%;
     }
-    
+    .aside-item-title {
+      margin-top: 44px;
+    }
+
+    .article-desc {
+      padding-bottom: 20px;
+    }
     .article-content {
       margin-left: 0px;
+      margin-top: 14px;
+      width: 100%;
+      border-bottom: solid 3px #eeeeee;
     }
+    .article-author-box {
+      margin-bottom: 22px;
+    }
+   .article-image {
+      width: 100%;
+      object-fit: cover;
+   }
+
 
     .product-cards {
       flex-direction: column;
@@ -819,7 +837,6 @@
     }
     .product-card-img {
       width: calc(100% - 44px); 
-      height: auto; 
       object-fit: cover; 
     }
     .product-card-desc {

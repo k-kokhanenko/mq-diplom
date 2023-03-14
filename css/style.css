@@ -827,10 +827,10 @@
     .article-author-box {
       margin-bottom: 22px;
     }
-   .article-image {
-      width: 100%;
-      object-fit: cover;
-   }
+    .article-image {
+        width: 100%;
+        object-fit: cover;
+    }
 
     .product-card:nth-child(n+2) {
       margin-top: 23px;
@@ -863,11 +863,11 @@
 
   @media (max-width: 640px) and (orientation: portrait) {
     .trends_items {
-      flex-wrap: wrap;
+      flex-direction: column;
     }
     .trends-item {
       width: 100%;
-    } 
+    }
     .trends-item:nth-child(n+2) {
       margin-top: 5px;
     }   

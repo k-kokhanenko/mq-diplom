@@ -43,7 +43,7 @@
     background-image: url("../images/banner-bg.jpg");
     background-color: #000000;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: center;
     background-size: cover;
     position: relative;
   }
@@ -787,8 +787,8 @@
     }
 
     .header-title-container {
-      width: /*280px*/77.8vw;
-      padding-top: /*175px*/27.34vh;
+      width: 77.8vw;
+      padding-top: 27.34vh;
     }
 
     .header-title {
@@ -800,8 +800,12 @@
     .products,
     .footer,
     .article {
-      flex-direction: column;
       width: 100%;
+    }
+    .container,
+    .article,
+    .product-cards {
+      flex-direction: column;
     }
 
     .aside {
@@ -828,10 +832,6 @@
       object-fit: cover;
    }
 
-
-    .product-cards {
-      flex-direction: column;
-    }
     .product-card:nth-child(n+2) {
       margin-top: 23px;
     }

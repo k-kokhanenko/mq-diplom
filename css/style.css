@@ -738,18 +738,6 @@
     background-image: url(../svg/form-circle.svg);
   }
 
-  @media (max-width: 640px) and (orientation: portrait) {
-    .trends_items {
-      flex-wrap: wrap;
-    }
-    .trends-item {
-      width: 100%;
-    } 
-    .trends-item:nth-child(n+2) {
-      margin-top: 5px;
-    }   
-  }
-
   /* tablet */
   @media (min-width: 641px) and (max-width: 1200px) {
     .header {
@@ -834,7 +822,6 @@
       height: auto; 
       object-fit: cover; 
     }
-
     .product-card-desc {
       width: 100%;
     }
@@ -855,4 +842,16 @@
     .trends-item:nth-child(n+3) {
       margin-top: 5px;
     }
+  }
+
+  @media (max-width: 640px) and (orientation: portrait) {
+    .trends_items {
+      flex-wrap: wrap;
+    }
+    .trends-item {
+      width: 100%;
+    } 
+    .trends-item:nth-child(n+2) {
+      margin-top: 5px;
+    }   
   }

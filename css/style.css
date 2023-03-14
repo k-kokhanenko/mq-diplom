@@ -799,18 +799,17 @@
     .container,
     .products,
     .footer,
+    .aside,
     .article {
       width: 100%;
     }
+
     .container,
     .article,
     .product-cards {
       flex-direction: column;
     }
 
-    .aside {
-      width: 100%;
-    }
     .aside-item-title {
       margin-top: 44px;
     }
@@ -835,10 +834,19 @@
     .product-card:nth-child(n+2) {
       margin-top: 23px;
     }
+    /* здесь устанавливается ширина изображения на всю ширину минус отсуп справа и слева по 22px
+    и само изображение растягивается 
     .product-card-img {
       width: calc(100% - 44px); 
       object-fit: cover; 
+    }*/
+
+    .product-card-img {
+      margin: auto;
+      display: block;
+      padding: 0;
     }
+
     .product-card-desc {
       width: 100%;
     }

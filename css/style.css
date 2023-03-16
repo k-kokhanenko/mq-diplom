@@ -772,10 +772,10 @@
 
     .container,
     .products,
-    .footer {
+    .footer,
+    .product-card-desc {
       width: 100%;
     }
-
     .article {
       flex-direction: column;
     }
@@ -797,6 +797,15 @@
     .product-cards {
       flex-wrap: wrap;
     }
+
+    .product-card {
+      width : calc((100% - 22px) / 2);
+    }
+    .product-card-img {
+      width: calc(100% - 44px); 
+      object-fit: cover; 
+    }
+
     .product-card:nth-child(4n+3) {
       margin-top: 27px;
     }
@@ -859,6 +868,9 @@
       flex-direction: column;
     }
 
+    .aside {
+      margin-left: 0px;
+    }
     .aside-item-title {
       margin-top: 44px;
     }

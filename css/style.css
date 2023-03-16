@@ -237,9 +237,8 @@
   }
   
   .article-image {
-    max-width: 380px;
+    width: 380px;
     height: 294px;
-    display: block;
   }
   
   .article-link {
@@ -796,11 +795,19 @@
       line-height: 36px;
     }
 
+    .trends-item {
+      padding: 0px 15px 15px; 
+    }
+    .trends-item-desc {
+      padding: 30px 20px;
+    }
+
     .container,
     .products,
     .footer,
     .aside,
-    .article {
+    .article,
+    .product-card-desc {
       width: 100%;
     }
 
@@ -834,24 +841,11 @@
     .product-card:nth-child(n+2) {
       margin-top: 23px;
     }
-    /* здесь устанавливается ширина изображения на всю ширину минус отсуп справа и слева по 22px
-    и само изображение растягивается 
     .product-card-img {
       width: calc(100% - 44px); 
       object-fit: cover; 
-    }*/
-
-    .product-card-img {
-      margin: auto;
-      display: block;
-      padding: 0;
-    }
-
-    .product-card-desc {
-      width: 100%;
     }
   }
-
 
   /* tablet and mobile styles for trends block*/
   @media 
